@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fff6f5">
+    <meta name="description" content="Для Любимой Иры">
+    <title>Только для тебя ♡</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E💗%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="ambient ambient-one" aria-hidden="true"></div>
+    <div class="ambient ambient-two" aria-hidden="true"></div>
+    <div id="particles" aria-hidden="true"></div>
+    <header class="site-header"><a class="wordmark" href="./" aria-label="Открытка с начала">для тебя<span>♡</span></a><span class="header-note">от всего сердца</span></header>
+    <main>
+      <section id="welcome" class="screen welcome" aria-labelledby="welcome-title">
+        <p class="eyebrow">ОДНА МАЛЕНЬКАЯ ОТКРЫТКА. МНОГО ЛЮБВИ.</p>
+        <h1 id="welcome-title">Есть кое-что,<br>что я хочу тебе <em>сказать.</em></h1>
+        <p class="intro">И это сердечко хранит всё самое важное.</p>
+        <button id="heart-button" class="heart-button" aria-label="Нажать на сердечко и открыть секрет">
+          <span class="heart-halo" aria-hidden="true"></span>
+          <svg class="heart" viewBox="0 0 200 180" aria-hidden="true"><defs><linearGradient id="heart-color" x1="0" y1="0" x2=".8" y2="1"><stop stop-color="#ffa1b5"/><stop offset=".48" stop-color="#f0507d"/><stop offset="1" stop-color="#c92155"/></linearGradient><linearGradient id="shine" x2="0" y2="1"><stop stop-color="white" stop-opacity=".55"/><stop offset="1" stop-color="white" stop-opacity="0"/></linearGradient></defs><path fill="url(#heart-color)" d="M100 170C85 157 10 108 10 58 10 7 73-4 100 38 127-4 190 7 190 58 190 108 115 157 100 170Z"/><path fill="url(#shine)" d="M26 58C26 24 66 15 84 40 54 27 38 41 34 68Z"/></svg>
+          <span class="sparkle sparkle-one" aria-hidden="true">✧</span><span class="sparkle sparkle-two" aria-hidden="true">✦</span><span class="sparkle sparkle-three" aria-hidden="true">✧</span>
+        </button>
+        <p class="heart-caption">нажми на сердечко</p>
+        <div class="little-note"><span aria-hidden="true">♡</span> Моя уникальная работа.<br>Только для тебя.</div>
+      </section>
+
+      <section id="quiz" class="screen quiz" aria-labelledby="quiz-title" hidden>
+        <p class="eyebrow">МАЛЕНЬКИЙ СЕКРЕТ МЕЖДУ НАМИ</p>
+        <h1 id="quiz-title" tabindex="-1">Узнаю тебя<br><em>из тысячи.</em></h1>
+        <p class="intro">Пять твоих любимых вещей — ключ к моему сердцу.</p>
+        <div class="quiz-card">
+          <div class="quiz-meta"><span id="question-number">ВОПРОС 01 / 05</span><span aria-hidden="true">♡</span></div>
+          <div id="progress" class="progress" aria-label="Прогресс"></div>
+          <h2 id="question-title"></h2>
+          <p class="question-hint">Выбери то, что любишь больше всего</p>
+          <div id="answers" class="answers" role="group" aria-labelledby="question-title"></div>
+          <p id="feedback" class="feedback" role="status" aria-live="polite"></p>
+          <button id="next-question" class="primary-button" disabled>Дальше <span aria-hidden="true">→</span></button>
+        </div>
+        <p class="under-card">Здесь можно ошибаться. Тебя всё равно любят.</p>
+      </section>
+
+      <section id="letter" class="screen letter-screen" aria-labelledby="letter-title" hidden>
+        <p class="eyebrow">СЕРДЦЕ ОТКРЫТО. И ОНО ТВОЁ.</p>
+        <article class="letter-paper">
+          <span class="letter-heart" aria-hidden="true">♥</span>
+          <p class="letter-date">Для моей самой любимой</p>
+          <h1 id="letter-title" tabindex="-1">Я тебя <em>люблю.</em></h1>
+          <div class="letter-body">
+            <p>Ты самая лучшая. Спасибо за то, что ты есть.<br class="desktop-break"> За твою улыбку, за твоё тепло, за то, что ты — это ты.</p>
+            <p>С тобой даже самый обычный день становится особенным. Чай — вкуснее, объятия — теплее, а мир — добрее.</p>
+            <p>Я хочу, чтобы в твоей жизни было больше поводов улыбаться. И хочу быть одним из них.</p>
+            <p class="letter-emphasis">Если вдруг забудешь, какая ты замечательная,<br class="desktop-break"> возвращайся сюда. Я напомню. ♡</p>
+          </div>
+          <p class="signature">Обнимаю всем сердцем<span>Артур А. Г.</span></p>
+          <div class="letter-bottom" aria-hidden="true"><span>🍣</span><span>🌸</span><span>🤍</span><span>🍵</span><span>🐸</span></div>
+        </article>
+        <div class="surprise">
+          <button id="surprise-button" class="primary-button">И ещё кое-что… <span aria-hidden="true">♡</span></button>
+          <p id="love-note" class="love-note" aria-live="polite">У меня для тебя есть ещё несколько тёплых слов.</p>
+        </div>
+        <button id="restart-button" class="text-button">Прочувствовать всё сначала ↺</button>
+      </section>
+    </main>
+    <footer>сделано с любовью <span aria-hidden="true">♡</span> и мыслями о тебе</footer>
+  </body>
+</html>
